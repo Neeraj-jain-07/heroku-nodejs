@@ -8,7 +8,6 @@ const register = async(req,res) => {
         console.log(user)
         const token = user.createJwtToken()
         res.status(StatusCodes.CREATED).json({user:{name:user.name},token})
-        
 }
 
 const login = async(req,res) => {
